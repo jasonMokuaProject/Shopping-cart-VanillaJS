@@ -1,17 +1,17 @@
-
 /**
 Default settings for webpage
 
 **/
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-body{
-    
-  font-family: "Lucida Console", "Courier New", monospace;
-} 
+
+body {
+
+    font-family: "Lucida Console", "Courier New", monospace;
+}
 
 
 /**
@@ -20,31 +20,32 @@ Navigation bar style
 **/
 
 
-.navigationbar{
-color:white;
-background-color:#212529 ;
-display: flex;
-justify-content: space-between;
-padding: 25px 60px;
-margin-bottom: 30px;
+.navigationbar {
+    color: white;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
+    margin-bottom: 30px;
 }
-.cart{
+
+.cart {
     background-color: white;
-    color:#212529;
+    color: #212529;
     padding: 5px;
     border-radius: 4px;
     font-size: 30px;
 }
 
-.cartAmount{
-position:absolute;
-color:white;
-background-color: red;
-top:10px;
-right:50px;
-padding:3px ;
-border-radius: 4px;
-font-size: 16px;
+.cartAmount {
+    position: absolute;
+    color: white;
+    background-color: red;
+    top: 10px;
+    right: 50px;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 /**
@@ -54,45 +55,46 @@ style for Products
 **/
 
 
-.DisplayProducts{
-display: grid;
-grid-template-columns: repeat(4,254px);
+.DisplayProducts {
+    display: grid;
+    grid-template-columns: repeat(4, 254px);
 
-gap:20px;
-justify-content: center;
-
-}
-
-@media (max-width: 1000px){
-    .DisplayProducts{
-       
-        grid-template-columns: repeat(2,254px);
-   
-        
-        }
+    gap: 20px;
+    justify-content: center;
 
 }
 
-.item{
-border: 1px solid black;
+@media (max-width: 1000px) {
+    .DisplayProducts {
+
+        grid-template-columns: repeat(2, 254px);
+
+
+    }
 
 }
 
-.details{
+.item {
+    border: 1px solid black;
+
+}
+
+.details {
     display: flex;
     flex-direction: column;
-    padding:10px;
+    padding: 10px;
 }
 
-.price-quantity{
+.price-quantity {
     padding: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.buttons{
-display: flex;
-gap:7px;
+
+.buttons {
+    display: flex;
+    gap: 7px;
 
 }
 
@@ -103,76 +105,92 @@ gap:7px;
 Cart Page
 
 */
-.CartDisplay{
-   
-    width:340px;
-    margin:auto;
-    display:grid;
-    grid-template-rows:auto ;
-    gap:10px;
-}
-.CartItem{
-display:flex;
-direction:row;
-gap:5px;
-border:1px solid black;
-}
-.detailsCart{
-padding: 10px;
+.CartDisplay {
 
+    width: 340px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
 }
-.amountofquantity{
-display: flex;
-margin-top: 20px;
-gap:10px;
-align-items: baseline;
+
+.CartItem {
+    display: flex;
+    direction: row;
+    gap: 5px;
+    border: 1px solid black;
+}
+
+.detailsCart {
+    padding: 10px;
 
 }
 
-.bi-x{
-margin-left: 100px;
-font-size: 20px;
+.amountofquantity {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    align-items: baseline;
+
+}
+
+.bi-x {
+    margin-left: 100px;
+    font-size: 20px;
 }
 
 
 /* checkout header */
 
-#checkoutDisplay{
+#checkoutDisplay {
 
-    margin:auto;
+    margin: auto;
     text-align: center;
     margin-bottom: 30px;
 }
 
 #checkoutDisplay p {
-display:inline-block;
-padding:5px;
-color:white;
+    display: inline-block;
+    padding: 5px;
+    color: white;
 }
+
 #checkoutDisplay p:nth-child(2) {
-    background-color:green;
-    
-    
-    }
-    #checkoutDisplay p:nth-child(3){
-background-color:red;
-
-    }
+    background-color: green;
 
 
-    /* pagination */
+}
 
-    .paginationbutton{
-            padding:10px;
-            text-align: center;
-margin: 6px;
+#checkoutDisplay p:nth-child(3) {
+    background-color: red;
 
-    }
+}
 
-    .pagination{
-        margin:auto;
-        text-align: center;
-        margin-bottom: 140px;
-        margin-top: 40px;
 
-    }
+/* pagination */
+
+.paginationbutton {
+    padding: 10px;
+    text-align: center;
+    margin: 6px;
+
+}
+
+.pagination {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 140px;
+    margin-top: 40px;
+
+}
+
+
+/* Feature */
+
+#feature {
+
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+
+}

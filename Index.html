@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ceravean Shopping">
     <meta name="description" content="Online clothing store">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
     <!-- Navigation bar-->
     <div class="navigationbar">
         <h2>Ceravean </h2>
-       <a href="/cart.html"> <div class="cart">
-            <i class="bi bi-cart2"></i>
-            <div class="cartAmount">0</div>
-        </div></a>
+        <a href="/cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div class="cartAmount">0</div>
+            </div>
+        </a>
     </div>
 
+    <!-- Features -->
+
+    <div id="feature">
+
+        <span> Sort by</span>
+        <select id="theSortOperation" onchange="shuffleProducts()">
+            <option value="High-Alphabet"> Name (A - Z) </option>
+            <option value="Low-Alphabet"> Name (Z - A) </option>
+            <option value="High-price"> Price (High - Low)</option>
+            <option value="Low-Price"> Price (Low - High)</option>
+        </select>
+
+    </div>
+
+
     <!-- Products display-->
-        <div class="DisplayProducts">
-    
-           
-        
-        </div>
-        <!-- Pagination -->
-<div class="pagination">
-
-
-</div>
-
-<div class="item" style="display:none;border:0px;width:0px;position:absolute;"></div>
-<div class="item" style="display:none;border:0px;width:0px;position:absolute;"></div>
-<div class="item" style="display:none;border:0px;width:0px;position:absolute;"></div>
-<br><br><br><br><br><br>
-<br><br><br>
-<br><br><br>
+    <div class="DisplayProducts">
 
 
 
+    </div>
+    <!-- Pagination -->
+    <div class="pagination">
 
-<script src="main.js"> </script>
+
+    </div>
+
+    <div class="item" style="display:none;border:0px;width:0px;position:absolute;"></div>
+    <div class="item" style="display:none;border:0px;width:0px;position:absolute;"></div>
+    <div class="item" style="display:none;border:0px;width:0px;position:absolute;"></div>
+    <br><br><br><br><br><br>
+    <br><br><br>
+    <br><br><br>
+
+
+
+
+    <script src="main.js"> </script>
 </body>
+
 </html>
