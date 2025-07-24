@@ -1,5 +1,5 @@
 let shopbox = document.getElementsByClassName('DisplayProducts')[0];
-// List of products
+// List of products edited remotely
 let products = [{
     id: 'jdurioyyyoootra',
     name: 'Casual Black T-shirt',
