@@ -1,5 +1,7 @@
 let shopbox = document.getElementsByClassName('DisplayProducts')[0];
-// List of products edited locally
+
+// List of products for demo 
+
 let products = [{
     id: 'jdurioyyyoootra',
     name: 'Casual Black T-shirt',
